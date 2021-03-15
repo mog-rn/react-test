@@ -12,12 +12,11 @@ function App() {
           <div className="box-2">
             <ToggleSwitch />
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
           <div className="box-3">
-            <ul className="list-1">
-              <li></li>
-              <li></li> 
-              <li></li> 
-            </ul>  
           </div>   
         </div>
       </div>

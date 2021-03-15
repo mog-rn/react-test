@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import '../ToggleSwitch/ToggleSwitch.css'
 
 
 const ToggleSwitch = () => {
@@ -11,19 +11,26 @@ const ToggleSwitch = () => {
     }
 
     return (
-        <div onChange={triggerToggle}  className="toggle">
+        <div onChange={triggerToggle}  className={`toggle ${toggle ? 'toggle--checked' : ' '}`}>
+            <div className="toggle-circle">
+                <input className="toggle-input" type="checkbox" aria-label="ToggleSwitch" /> 
+                {/*<input className="toggle-input-2" type="radio" aria-label="ToggleSwitch" /> App*/}
+            </div>
             <div className="toggle-container">
                 <div className="toggle-check">
-                    <span></span>
+                    <span>
+                        <ul>
+                            <li>Entry1</li>
+                            <li>Entry2</li>
+                            <li>Entry3</li>
+                        </ul>
+                    </span>
                 </div>
                 <div className="toggle-uncheck">
                     <span></span>
                 </div>
             </div>
-            <div className="toggle-circle">
-                <input className="toggle-input-1" type="radio" aria-label="ToggleSwitch" /> Admin <br />
-                <input className="toggle-input-2" type="radio" aria-label="ToggleSwitch" /> App
-            </div>
+            
         </div>
     )
 }
