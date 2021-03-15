@@ -1,5 +1,4 @@
 import './App.css';
-import ToggleSwitch from '../src/ToggleSwitch/ToggleSwitch';
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
             Logo
           </div>
           <div className="box-2">
-            <ToggleSwitch />
+            
           </div>
           <br />
           <br />
