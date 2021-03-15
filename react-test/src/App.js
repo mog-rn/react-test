@@ -1,4 +1,5 @@
 import './App.css';
+import Admin from '../src/components/Admin/Admin';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <br />
           <br />
           <div className="box-3">
+            <Admin />
           </div>   
         </div>
       </div>
