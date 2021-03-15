@@ -21,7 +21,8 @@ const ToggleSwitch = () => {
                 </div>
             </div>
             <div className="toggle-circle">
-                <input className="toggle-input" type="checkbox" aria-label="ToggleSwitch" />
+                <input className="toggle-input-1" type="radio" aria-label="ToggleSwitch" /> Admin <br />
+                <input className="toggle-input-2" type="radio" aria-label="ToggleSwitch" /> App
             </div>
         </div>
     )
