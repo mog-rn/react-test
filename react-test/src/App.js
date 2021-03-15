@@ -1,5 +1,4 @@
 import './App.css';
-import Admin from '../src/components/Admin/Admin';
 
 function App() {
   return (
@@ -10,14 +9,15 @@ function App() {
             Logo
           </div>
           <div className="box-2">
-            
+            <input type="radio" onClick="" name="admin" />Admin <br />
+            <input type="radio" onClick="" name="app" />App
           </div>
           <br />
           <br />
           <br />
           <br />
           <div className="box-3">
-            <Admin />
+          
           </div>   
         </div>
       </div>
