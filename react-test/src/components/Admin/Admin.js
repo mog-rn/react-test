@@ -2,11 +2,7 @@ import React, { Component } from 'react'
 
 
 const data  = [
-        {entry: 'AdminEntry1'},
-        {entry: 'AdminEntry2'},
-        {entry: 'AdminEntry3'},
-        {entry: 'AdminEntry4'},
-        {entry: 'AdminEntry5'}
+        
     ];
 const columns = [{
     dataField: 'entry',
@@ -14,12 +10,34 @@ const columns = [{
 }]
 
 class Admin extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            entries: [
+                {
+                    entry: 'AdminEntry1'
+                }, 
+                {
+                    entry: 'AdminEntry2'
+                }, 
+                {
+                    entry: 'AdminEntry3'
+                }, 
+                {
+                    entry: 'AdminEntry4'
+                }, 
+                {
+                    entry: 'AdminEntry5'
+                }
+            ]
+        }
+    }
     render() {
         return (
             <div>
                 <p>Admin Entries</p>
-                
-            </div>
+
+                </div>
 
         )
     }
