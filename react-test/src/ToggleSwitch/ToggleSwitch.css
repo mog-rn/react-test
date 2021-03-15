@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-.toggle-input {
+/**.toggle-input {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -43,4 +43,4 @@
     background-color: #fafafa;
     box-sizing: border-box;
     transition: all .25s ease;
-}
+}*/
