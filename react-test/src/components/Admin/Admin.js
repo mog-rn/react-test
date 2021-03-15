@@ -32,11 +32,25 @@ class Admin extends Component {
             ]
         }
     }
+    renderTableData() {
+        return this.state.entries.map((Entry, index) => {
+            const { entry } = Entry
+            return (
+                <tr>
+                    <td>{entry}</td>
+                </tr>
+            )
+        })
+    }
     render() {
         return (
             <div>
                 <p>Admin Entries</p>
-
+                    <table id="Admin">
+                        <tbody>
+                            {this.renderTableData()}
+                        </tbody>
+                    </table>
                 </div>
 
         )
