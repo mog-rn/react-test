@@ -13,8 +13,34 @@
     clip: rect(0 0 0 0);
     height: 1px;
     margin: -1px;
-    overflow: hidden;
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+.toggle-check, .toggle-uncheck {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+
+.toggle-circle {
+    transition: all .5s cubic-bezier(.23,1,.32,1) 0ms;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    transition: all .25s ease;
 }

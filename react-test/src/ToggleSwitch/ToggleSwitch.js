@@ -12,10 +12,6 @@ const ToggleSwitch = () => {
 
     return (
         <div onChange={triggerToggle}  className={`toggle ${toggle ? 'toggle--checked' : ' '}`}>
-            <div className="toggle-circle">
-                <input className="toggle-input" type="checkbox" aria-label="ToggleSwitch" /> 
-                {/*<input className="toggle-input-2" type="radio" aria-label="ToggleSwitch" /> App*/}
-            </div>
             <div className="toggle-container">
                 <div className="toggle-check">
                     <span>
@@ -30,6 +26,11 @@ const ToggleSwitch = () => {
                     <span></span>
                 </div>
             </div>
+            <div className="toggle-circle">
+                <input className="toggle-input" type="checkbox" aria-label="ToggleSwitch" /> 
+                {/*<input className="toggle-input-2" type="radio" aria-label="ToggleSwitch" /> App*/}
+            </div>
+            
             
         </div>
     )
