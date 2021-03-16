@@ -1,9 +1,9 @@
 function showAdmin () {
-    let element = document.getElementById('box-3');
+    let element = document.getElementByClassName('box-3');
     element.style.display="block";
 } 
 
 function showApp () {
-    let element = document.getElementById('box-4');
+    let element = document.getElementByClassName('box-4');
     element.style.display="block";
 }
