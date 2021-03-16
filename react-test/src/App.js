@@ -1,16 +1,13 @@
 import React from 'react'
 import './App.css';
 
-class App extends React.Component() {
+class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      entry: ''
-    };
   }
   render() {
-  return (
+    return (
     <div className="App">
       <div className="container">
         <div className="row">
@@ -21,11 +18,20 @@ class App extends React.Component() {
             <input type="radio" value="admin" /> Admin <br /><br />
             <input type="radio" value="app" /> App
           </div>
+          <div className="admin">
+
+          </div>
+          <div className="app">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   );
- }
+  }
 }
 
 export default App;
