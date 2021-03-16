@@ -34,6 +34,10 @@ class App extends React.Component {
             <input type="radio" value="app" name="permission"  /> App
             
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
           <div className="admin" style={{display: this.state.admin}}>
             <ul>
               <li>AdminEntry1</li>
@@ -46,6 +50,8 @@ class App extends React.Component {
               <li>Entry1</li>
               <li>Entry2</li>
               <li>Entry3</li>
+              <li>Entry4</li>
+              <li>Entry5</li>
             </ul>
           </div>
         </div>

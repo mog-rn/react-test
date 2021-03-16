@@ -1,8 +1,55 @@
 .App {
   text-align: center;
+  border: 1px solid black;
 }
 
 .app {
   display: none;
 
+}
+
+.logo {
+  border: 1px solid black;
+  float: left;
+  width: 150px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  border: 1px transparent;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+ul li {
+  border: 1px solid black;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-around;
+  height: 10px;
+  width: 150px;
+  list-style-type: none;
+  background-color: grey;
+}
+
+ul li:hover {
+  background-color: blue;  
+}
+.admin {
+  border: 1px solid black;
+  width: 350px;
+  height: auto;
+  background-color: lightgray;
+}
+
+.app-1 {
+  border: 1px solid black;
+  width: 350px;
+  height: auto;
+  background-color: lightgray;
 }
