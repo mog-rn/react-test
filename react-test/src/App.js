@@ -1,71 +1,25 @@
-import React, { Component } from "react";
+import logo from './logo.svg';
 import './App.css';
 
-function showAdmin () {
-    let element = document.getElementByClassName('box-3');
-    element.style.display="block";
-} 
-
-function showApp () {
-    let element = document.getElementByClassName('box-4');
-    element.style.display="block";
-}
-
-
-class App extends Component {  
-
-
-  constructor(props) {
-    super(props);
-    this.state = {isToggleOn: true};
-    
-    this.handleClick = this.handleClick.bind(this);
-    }
-    handleClick () {
-      this.setState(prevState => ({
-        isToggleOn: !prevState.isToggleOn
-      }));
-    }
-  render() {
+function App() {
   return (
     <div className="App">
-      <div className="container">
-        <div className="row">
-          <div className="box-1">
-            Logo
-          </div>
-          <div className="box-2">
-            <button onclick="showAdmin()">Admin</button>
-            <button onclick="showApp()">App</button>
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <div className="box-3">
-              <ul>
-                <li>AdminEntry1</li>
-                <li>AdminEntry2</li>
-                <li>AdminEntry3</li>
-                <li>AdminEntry4</li>
-                <li>AdminEntry5</li>
-              </ul>
-          </div>
-          <div className="box-4">
-            <ul>
-              <li>Entry1</li>
-              <li>Entry2</li>
-              <li>Entry3</li>
-              <li>Entry4</li>
-              <li>Entry5</li>  
-            </ul>  
-          </div>   
-        </div>
-      </div>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
- }
 }
-
 
 export default App;
