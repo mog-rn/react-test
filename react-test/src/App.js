@@ -1,10 +1,20 @@
 import React, { Component } from "react";
+import { Button } from "react-native";
 import './App.css';
-import Safe from 'react-safe'
 
+
+function showAdmin (props) {
+  let element = document.getElementById('box-3');
+  element.style.display="block";
+}
+
+function showApp (props) {
+  let element = document.getElementById('box-4');
+  element.style.display="block";
+}
 class App extends Component {  
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       entry: ''
@@ -25,9 +35,9 @@ class App extends Component {
             Logo
           </div>
           <div className="box-2">
-            <Safe.script src="../Script/Script.js"></Safe.script>
-            <input type="radio" value="admin" checked={this.state.entry === "admin"} onChange={this.onRadioChange} onClick="showAdmin()" />Admin <br />
-            <input type="radio" value="app" checked={this.state.entry === "app"} onChange={this.onRadioChange} onClick="showApp()" />App
+            
+            <Button onClick={showAdmin}>Admin</Button>
+            <Button onClick={showApp}>App</Button>
           </div>
           <br />
           <br />
