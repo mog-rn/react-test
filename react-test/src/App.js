@@ -8,7 +8,10 @@ function App() {
           <div className="logo">
             Logo
           </div>
-          <div></div>
+          <div className="radio-buttons">
+            <input /> Admin <br /><br />
+            <input /> App
+          </div>
         </div>
       </div>
     </div>
