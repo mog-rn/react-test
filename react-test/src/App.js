@@ -3,29 +3,19 @@ import { Button } from "react-native";
 import './App.css';
 
 
-function showAdmin (props) {
-  let element = document.getElementById('box-3');
-  element.style.display="block";
-}
 
-function showApp (props) {
-  let element = document.getElementById('box-4');
-  element.style.display="block";
-}
 class App extends Component {  
   constructor(props) {
     super(props);
-
-    this.state = {
-      entry: ''
+    this.state = {isToggleOn: true};
+    
+    this.handleClick = this.handleClick.bind(this);
     }
-    this.onRadioChange = this.onRadioChange.bind(this);
-  }
-  onRadioChange = (e) => {
-      this.setState({
-        entry: e.target.value
-      })
-    }
+    handleClick () [
+      this.setState(prevState => ({
+        isToggleOn: !prevState.isToggleOn
+      }))
+    ]
   render() {
   return (
     <div className="App">
@@ -35,9 +25,9 @@ class App extends Component {
             Logo
           </div>
           <div className="box-2">
-            
-            <Button onClick={showAdmin}>Admin</Button>
-            <Button onClick={showApp}>App</Button>
+            <button onClick={this.handleClick}>
+              {this.state.isToggleOn ? 'Admin' : 'App'}
+            </button>
           </div>
           <br />
           <br />
