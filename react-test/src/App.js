@@ -2,8 +2,12 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      
+    <div className="App">
+      <div className="container">
+        <div className="row">
+          
+        </div>
+      </div>
     </div>
   );
 }
