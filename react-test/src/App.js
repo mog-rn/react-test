@@ -2,10 +2,10 @@ import React from 'react'
 import './App.css';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
-    this.state = {
+     this.state = {
       app: 'none',
       admin: 'none'
     }
@@ -30,8 +30,8 @@ class App extends React.Component {
             Logo
           </div>
           <div className="radio-buttons" onChange={this.handleClick}>
-            <input type="radio" value="admin"  /> Admin <br /><br />
-            <input type="radio" value="app"  /> App
+            <input type="radio" value="admin" name="permission"  /> Admin <br /><br />
+            <input type="radio" value="app" name="permission"  /> App
             
           </div>
           <div className="admin" style={{display: this.state.admin}}>
