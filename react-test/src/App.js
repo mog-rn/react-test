@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
-
+import Safe from 'react-safe'
 
 class App extends Component {  
   constructor() {
@@ -25,8 +25,9 @@ class App extends Component {
             Logo
           </div>
           <div className="box-2">
-            <input type="radio" value="admin" checked={this.state.entry === "admin"} onChange={this.onRadioChange} />Admin <br />
-            <input type="radio" value="app" checked={this.state.entry === "app"} onChange={this.onRadioChange} />App
+            <Safe.script src="../Script/Script.js"></Safe.script>
+            <input type="radio" value="admin" checked={this.state.entry === "admin"} onChange={this.onRadioChange} onClick="showAdmin()" />Admin <br />
+            <input type="radio" value="app" checked={this.state.entry === "app"} onChange={this.onRadioChange} onClick="showApp()" />App
           </div>
           <br />
           <br />
