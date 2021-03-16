@@ -1,6 +1,15 @@
+import React, { Component } from 'react'
 import './App.css';
 
-function App() {
+class App extends Component() {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      entry: ''
+    };
+  }
+  render() {
   return (
     <div className="App">
       <div className="container">
@@ -16,6 +25,7 @@ function App() {
       </div>
     </div>
   );
+ }
 }
 
 export default App;
