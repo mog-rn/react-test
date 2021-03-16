@@ -11,11 +11,11 @@ class App extends Component {
     
     this.handleClick = this.handleClick.bind(this);
     }
-    handleClick () [
+    handleClick () {
       this.setState(prevState => ({
         isToggleOn: !prevState.isToggleOn
-      }))
-    ]
+      }));
+    }
   render() {
   return (
     <div className="App">
