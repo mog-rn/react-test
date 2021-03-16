@@ -1,6 +1,22 @@
+import React, { Component } from "react";
 import './App.css';
 
-function App() {
+
+class App extends Component {  
+  constructor() {
+    super();
+
+    this.state = {
+      entry: ''
+    }
+    this.onRadioChange = this.onRadioChange.bind(this);
+  }
+  onRadioChange = (e) => {
+      this.setState({
+        entry: e.target.value
+      })
+    }
+  render() {
   return (
     <div className="App">
       <div className="container">
@@ -9,20 +25,37 @@ function App() {
             Logo
           </div>
           <div className="box-2">
-            <input type="radio" onClick="" name="admin" />Admin <br />
-            <input type="radio" onClick="" name="app" />App
+            <input type="radio" value="admin" checked={this.state.entry === "admin"} onChange={this.onRadioChange} />Admin <br />
+            <input type="radio" value="app" checked={this.state.entry === "app"} onChange={this.onRadioChange} />App
           </div>
           <br />
           <br />
           <br />
           <br />
           <div className="box-3">
-          
+              <ul>
+                <li>AdminEntry1</li>
+                <li>AdminEntry2</li>
+                <li>AdminEntry3</li>
+                <li>AdminEntry4</li>
+                <li>AdminEntry5</li>
+              </ul>
+          </div>
+          <div className="box-4">
+            <ul>
+              <li>Entry1</li>
+              <li>Entry2</li>
+              <li>Entry3</li>
+              <li>Entry4</li>
+              <li>Entry5</li>  
+            </ul>  
           </div>   
         </div>
       </div>
     </div>
   );
+ }
 }
+
 
 export default App;

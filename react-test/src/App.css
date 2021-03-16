@@ -13,3 +13,11 @@
 .box-2 {
   float: right;
 }
+
+.box-3 {
+  display: none;
+}
+
+.box-4 {
+  display: none;
+}
