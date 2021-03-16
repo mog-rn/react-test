@@ -9,8 +9,8 @@ function App() {
             Logo
           </div>
           <div className="radio-buttons">
-            <input /> Admin <br /><br />
-            <input /> App
+            <input type="radio" value="admin" /> Admin <br /><br />
+            <input type="radio" value="app" /> App
           </div>
         </div>
       </div>
