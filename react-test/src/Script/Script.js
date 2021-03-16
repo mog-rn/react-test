@@ -4,6 +4,6 @@ function showAdmin () {
 } 
 
 function showApp () {
-    let element = document.getElementByClassName('box-4');
+    let element = document.getElementByClass('box-4');
     element.style.display="block";
 }

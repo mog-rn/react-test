@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import './App.css';
 
+function showAdmin () {
+    let element = document.getElementByClassName('box-3');
+    element.style.display="block";
+} 
+
+function showApp () {
+    let element = document.getElementByClassName('box-4');
+    element.style.display="block";
+}
 
 
 class App extends Component {  
@@ -26,9 +35,8 @@ class App extends Component {
             Logo
           </div>
           <div className="box-2">
-            <button onClick={this.handleClick}>
-              {this.state.isToggleOn ? 'Admin' : 'App'}
-            </button>
+            <button onclick="showAdmin()">Admin</button>
+            <button onclick="showApp()">App</button>
           </div>
           <br />
           <br />
